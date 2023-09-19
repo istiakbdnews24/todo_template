@@ -7,7 +7,7 @@ import {
     Nav,
     NavItem,
 } from 'reactstrap';
-import Logo from '../../assets/logo.png';
+
 
 import { connect } from 'react-redux';
 
@@ -31,11 +31,9 @@ const Header = props => {
         links = (
             <Nav className="mr-md-5">
                 <NavItem>
-                    <NavLink exact to="/" className="NavLink">Burger Builder</NavLink>
+                    <NavLink exact to="/" className="NavLink">todo</NavLink>
                 </NavItem>
-                <NavItem>
-                    <NavLink exact to="/orders" className="NavLink">Orders</NavLink>
-                </NavItem>
+   
                 <NavItem>
                     <NavLink exact to="/logout" className="NavLink">Log out</NavLink>
                 </NavItem>
@@ -48,9 +46,7 @@ const Header = props => {
                 backgroundColor: "#D70F64",
                 height: "70px",
             }}>
-                <NavbarBrand href="/" className="mr-auto ml-md-5 Brand">
-                    <img src={Logo} alt="Logo" width="80px" />
-                </NavbarBrand>
+
                 {links}
             </Navbar>
         </div>
