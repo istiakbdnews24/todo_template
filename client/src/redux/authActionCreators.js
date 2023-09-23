@@ -40,12 +40,12 @@ export const auth = ( email, password, mode) => dispatch => {
     }
 
 
-    let url= "https://burgerbuilder-api.onrender.com";
+    let url= "http://localhost:5000";
     let authUrl = null;
     if (mode === "Sign Up") {
-        authUrl = `${url}/user`
+        authUrl = `${url}/user/register`
     } else {
-        authUrl = `${url}/user/auth`;
+        authUrl = `${url}/user/login`;
     }
   
     axios.post(authUrl, authData)

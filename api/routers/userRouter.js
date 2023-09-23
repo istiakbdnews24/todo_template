@@ -42,10 +42,10 @@ const authUser = async (req, res) => {
     })
 }
 
-router.route('/')
+router.route('/register')
     .post(newUser)
 
-router.route('/auth')
+router.route('/login')
     .post(authUser)
 
 module.exports = router;

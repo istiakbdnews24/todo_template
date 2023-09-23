@@ -4,12 +4,10 @@ const Schema = mongoose.Schema
 
 const todoSchema = new Schema(
     {
-
       userId: {
         type: String,
         required: true,
       },
-     
       desc: {
         type: String,
         max: 500,
@@ -19,7 +17,6 @@ const todoSchema = new Schema(
         type: Boolean,
         default: false
       }
-  
       
   }
   );
